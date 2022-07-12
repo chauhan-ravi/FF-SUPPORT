@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+        #faqs{
+            padding: 44px;
+            padding-bottom: 1%;
+        }
+        .container{
+            max-width: 100%;
+            margin-left: 0px;
+            min-height: 100;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #p1  {
+            text-align: center;
+
+        }
+
+        ul {
+        padding: 0;
+        }
+
+    nav {
+        width: 100%;
+        height: 34px;
+        background: rgb(1, 15, 3);
+        position: fixed;
+        top:0;
+        z-index: +1;
+        }
+    
+    nav ul {
+            padding-top: 7px;
+            padding-left: 17px;
+            }
+    
+    nav li {
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+            }
+
+    
+        body {
+            font-family: 'Work Sans', sans-serif;
+            text-align: center;
+        }
+
+        .faq-heading {
+            position: relative;
+            border-bottom: #777;
+            padding: 100%;
+        }
+
+        .faq-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hr-line {
+            width: 60%;
+            margin: auto;
+        }
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        /* Style the buttons that are used to open and close the faq-page body */
+
+        .faq-page {
+            /* background-color: #eee; */
+            color: #444;
+            cursor: pointer;
+            padding: 30px 20px;
+            width: 60%;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            margin: auto;
+        }
+
+        .faq-body {
+            margin: auto;
+            /* text-align: center; */
+            width: 50%;
+            padding: auto;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+        .active,
+        .faq-page:hover {
+            background-color: #F9F9F9;
+        }
+
+        /* Style the faq-page panel. Note: hidden by default */
+
+        .faq-body {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        .faq-page:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: rgb(111, 40, 40);
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+
+        .faq-heading {
+            background-color: rgba(0, 255, 55, 0.342);
+            text-align: center;
+            padding: 27px;
+        }
+        footer {
+        position:fixed;
+        z-index: +1;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        background-color: rgba(47, 47, 54, 0.975);
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href=".\index.html">HOME</a></li>
+                    <li><a href=".\FAQS.html">FAQS</a></li>
+                    <li><a href=".\about.html">ABOUT US</a></li>
+                    <li><a href=".\contact.html">CONTACT US</a></li>
+        
+                </ul>
+            </nav>
+            <h1 class="faq-heading" id="faqs">FAQ'S (FREQUENTLY ASKED QUESTIONS)</h1>
+            <section class="faq-container">
+                <div class="faq-one">
+                    <!-- faq question -->
+                    <h1 class="faq-page">HOW I WILL GET RESPONCE ?
+
+                    </h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>You will get responce after checking your acount</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two">
+                    <!-- faq question -->
+                    <h1 class="faq-page">IS THERE ANY ADDITIONAL SUPPORT FOR CONTACT ?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>YES, we provide link belove</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+                    <!-- faq question -->
+                    <h1 class="faq-page">HOW MUCH TIME TO RESOLVE ISSUE ?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>3-4 working days
+                        </p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+                    <!-- faq question -->
+                    <h1 class="faq-page">CAN I UNBAN MY ID ?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Yes, if you not use any third party app
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        var faq = document.getElementsByClassName("faq-page");
+        var i;
+        for (i = 0; i < faq.length; i++) {
+            faq[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+                /* Toggle between hiding and showing the active panel */
+                var body = this.nextElementSibling;
+                if (body.style.display === "block") {
+                    body.style.display = "none";
+                } else {
+                    body.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <footer>
+        <p1 id="p1">
+            <a href="https://ffsupport.garena.com/hc/en-us">Contact Free Fire</a>
+        </p1>  
+    </footer>
+</body>
+
+</html>
