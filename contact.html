@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="game.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<style>
+    
+        * {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+
+        .container {
+            max-width: 80%;
+            padding: 34px;
+            margin: auto;
+            min-height: 60%;
+            
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: center;
+
+        }
+        #p1  {
+            text-align: center;
+
+        }
+
+        input,
+        textarea {
+            border: 2px solid rgba(0, 0, 0, 0.774);
+            border-radius: 7px;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            margin: 11px 0px;
+            padding: 4px;
+        }
+
+        form {
+            display:grid;
+            align-items: center;
+            flex-direction:column;
+        }
+
+        .btn {
+            color: white;
+            background: green;
+            padding: 7px 17px;
+            font-size: 20px;
+            border:solid rgba(0, 0, 0, 0.568);
+            border-radius: 17px;
+            cursor: pointer;
+            position: relative;
+            align-items: center;
+            /* margin-left: 44%; */
+        }
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            text-align: center;
+        }
+
+        
+   #heading {
+            margin-top: 4%;
+            color: rgb(47, 12, 248);
+            text-shadow: 1px 1px 7px rgba(3, 0, 15, 0.358);
+        }
+        p {
+            margin-top: 1%;
+            color: rgb(212, 248, 10);
+            text-shadow: 1px 1px 7px rgb(3, 0, 15);
+            }
+     a {
+        color: #fff;
+        text-decoration: none;
+            }        
+
+    ul {
+        padding: 0;
+        }
+
+    nav {
+        width: 100%;
+        height: 34px;
+        background: rgb(1, 15, 3);
+        position: fixed;
+        top:0;
+        z-index: +1;
+        }
+    
+    nav ul {
+            padding-top: 7px;
+            padding-left: 17px;
+            }
+    
+    nav li {
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+            }
+
+    nav a:hover {
+            color: red;
+            }
+
+    footer {
+        position:fixed;
+        z-index: +1;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        background-color: rgba(47, 47, 54, 0.975);
+    }
+    
+    a:hover {
+            color: blue;
+            }
+    a:is(:focus,:hover){
+        color: #fff;
+        background-color: blue;
+    }
+
+</style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href=".\index.html">HOME</a></li>
+            <li><a href=".\faqs.html">FAQS</a></li>
+            <li><a href=".\about.html">ABOUT US</a></li>
+            <li><a href=".\contact.html">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="heading" >FREE FIRE SUPPORT FORM</h1><br>
+            <p>Submit your details for connect with you </p><br>
+            <form action=".\faqs.html"  method="post" id="form" name="myform" onsubmit="alert ('form submit successfully')" >
+            <label >Name :
+                <input type="text" name="name" id="name" placeholder="Enter Your Name :" required></label><br>
+                <label> ID &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="id" id="id" placeholder="Enter Your Free Fire id" required></label><br>
+            <label>Level :&nbsp;
+                <input type="number" name="level" id="level" placeholder="Enter Your Free Fire Level" required>
+            </label><br>
+            <label>Email :&nbsp;
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </label><br>
+            <label>Phone :
+                <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone" required>
+            </label><br>
+            <label>Issue :
+                <textarea name="issue" id="issue" cols="20" rows="3" placeholder="Enter Your Issues here" required></textarea>
+            </label><br>   
+           
+            <div>
+                <button class="btn" >SUBMIT</button> 
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p1 id="p1">
+            <a href="https://ffsupport.garena.com/hc/en-us">Contact Free Fire</a>
+        </p1>
+    </footer>
+      
+</body>
+</html>
